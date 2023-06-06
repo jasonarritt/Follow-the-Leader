@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  margin: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#top-left {
+  background-color: green;
+}
+
+#top-right {
+  background-color: red;
+}
+
+#bottom-left {
+  background-color: blue;
+}
+
+#bottom-right {
+  background-color: yellow;
+}
