@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #262525;
+}
+
 h1 {
   color: #fff;
 }
@@ -17,7 +21,7 @@ button {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 100%;
   height: 500px;
 }
 
@@ -25,7 +29,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 500px;
+  width: 100%;
   height: 50px;
 }
 

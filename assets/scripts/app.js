@@ -4,22 +4,31 @@ const topRightSquareEl = document.getElementById("top-right");
 const bottomLeftSquareEl = document.getElementById("bottom-left");
 const bottomRightSquareEl = document.getElementById("bottom-right");
 
-let GeneratedPatternArray = [];
+let generatedPatternArray = [];
 let userPatternArray = [];
 
 function startGame() {
+  generatedPatternArray = [];
+  userPatternArray = [];
+  console.log(generatedPatternArray);
+  console.log(userPatternArray);
   console.log("Game is starting...");
+
+  console.log(generatedPatternArray);
+  console.log(userPatternArray);
   createPattern();
 }
 
 // TODO: Write function to create pattern while looping
 function createPattern() {
-  for (let i = 0; i < 11; i++) {
+  for (let i = 0; i < 10; i++) {
     let newSquareChooser = Math.floor(Math.random() * 4);
-    GeneratedPatternArray.push(newSquareChooser);
-    console.log(GeneratedPatternArray);
+    generatedPatternArray.push(newSquareChooser);
+    console.log(generatedPatternArray);
   }
 }
+
+function addToPattern() {}
 
 // TODO: Write function to accept user input and check against current pattern
 function checkUserPattern() {}
