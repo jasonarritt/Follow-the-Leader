@@ -9,11 +9,16 @@ let userPatternArray = [];
 
 function startGame() {
   console.log("Game is starting...");
+  createPattern();
 }
 
 // TODO: Write function to create pattern while looping
 function createPattern() {
-  for (let i = 0; i < 11; ) {}
+  for (let i = 0; i < 11; i++) {
+    let newSquareChooser = Math.floor(Math.random() * 4);
+    GeneratedPatternArray.push(newSquareChooser);
+    console.log(GeneratedPatternArray);
+  }
 }
 
 // TODO: Write function to accept user input and check against current pattern
