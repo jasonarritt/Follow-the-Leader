@@ -8,23 +8,25 @@ let generatedPatternArray = [];
 let userPatternArray = [];
 
 function startGame() {
-  generatedPatternArray = [];
-  userPatternArray = [];
+  let generatedPatternArray = [];
+  let userPatternArray = [];
   console.log(generatedPatternArray);
   console.log(userPatternArray);
   console.log("Game is starting...");
 
-  console.log(generatedPatternArray);
-  console.log(userPatternArray);
   createPattern();
 }
 
 // TODO: Write function to create pattern while looping
 function createPattern() {
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < 7; i++) {
     let newSquareChooser = Math.floor(Math.random() * 4);
     generatedPatternArray.push(newSquareChooser);
-    console.log(generatedPatternArray);
+
+    generatedPatternArray.forEach((square) =>
+      setTimeout(console.log(square), 1000)
+    );
+    console.log("Next Round!");
   }
 }
 
